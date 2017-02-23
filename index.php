@@ -3,7 +3,7 @@
 // ini_set('display_errors', 1);
 
 $ServerPath = $_SERVER['DOCUMENT_ROOT'];
-$ServerPath .= "/shared/connexion.php";
+$ServerPath .= "/shared/functions.php";
 include_once($ServerPath);
 
 $AverageOnTrain = 150;

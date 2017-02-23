@@ -1,21 +1,12 @@
 <?php
-	$host_name  = "[hostname]";
-	$database   = "[database]";
-	$user_name  = "[username]";
-	$password   = "[password]";
-	
+	$ServerPath = $_SERVER['DOCUMENT_ROOT'];
+	$ServerPath .= "/shared/db.php";
+	include_once($ServerPath);
+
 	$SiteDomain = "http://londonmidlandwatch.co.uk/";
 	$SiteName = "London Midland Watch";
 	$SiteSubTitle = "Real passenger experiences, not notional statistics";
 
-	date_default_timezone_set ('Europe/London');
-
-    global $connect;
-	$connect = new mysqli($host_name, $user_name, $password, $database);
-    if ($connect->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-	}
-	
 	function bind_all(&$stmt, &$out) {	// See http://stackoverflow.com/questions/1290975/how-to-create-a-secure-mysql-prepared-statement-in-php for this
 		$data = mysqli_stmt_result_metadata($stmt);
 		$fields = array();
