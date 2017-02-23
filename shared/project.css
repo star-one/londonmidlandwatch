@@ -1,0 +1,18 @@
+/************************************************************************************
+Project specific styles
+*************************************************************************************/
+
+.ontime {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #eee;
+	border: 2px solid #bfb;
+}
+
+.late {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #eee;
+	border: 2px solid #fbb;
+}
+

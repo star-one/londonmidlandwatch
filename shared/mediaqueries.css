@@ -1,0 +1,40 @@
+/************************************************************************************
+selectnav.js styles
+*************************************************************************************/
+
+/* default style */
+.selectnav { display: none; }
+
+/* small screen */
+@media screen and (max-width: 550px) {
+  .js #main-nav { display: none; }
+  .js #sec-nav { display: none; }
+  .js .selectnav { display: block; width: 90%; margin: 5px auto;}
+
+/************************************************************************************
+smaller than 700
+*************************************************************************************/
+@media screen and (max-width: 700px) { /* We actually want this to kick in slightly wider */
+
+	body {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	}
+
+	input[type="text"] {
+	width: 94%;
+	}
+
+	/* main */
+	#main {
+		width: 100%;
+	}
+	
+	.half-left { /* these will be moved further down to phone sizes once i've done the other queries */
+		width: 100% !important;
+	}
+	.half-right {
+		width: 100% !important;
+	}
+	
+}
